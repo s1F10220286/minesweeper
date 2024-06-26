@@ -4,29 +4,44 @@
   align-items: center;
   justify-content: center;
   height: 100vh;
-  min-height: 100vh;
   padding: 0 0.5rem;
-}
-
-.sampleStyle {
-  width: 30px;
-  height: 30px;
-  background: url('../assets/images/icons.png') no-repeat;
 }
 
 .board {
   display: grid;
-  grid-template-columns: repeat(9, 30px);
+  grid-template-columns: repeat(9, 32px);
   gap: 0;
   background-color: #aaa;
 }
 
-.cell {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 30px;
-  height: 30px;
+.stone {
+  width: 32px;
+  height: 32px;
   background-color: #ccc;
   border: outset 5px #ddd;
 }
+
+.cell {
+  width: 32px;
+  height: 32px;
+  background-color: #ccc;
+  border: outset 1px #ddd;
+}
+
+.empty {
+  width: 32px;
+  height: 32px;
+  background-color: #eee;
+  border: solid 1px #ddd;
+}
+
+
+.number {
+  width: 32px;
+  height: 32px;
+  background: url('../assets/images/icons.png') no-repeat;
+  border: solid 1px #fff;
+}
+
+
+
